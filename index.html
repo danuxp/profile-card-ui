@@ -13,7 +13,7 @@
     <div class="container">
         <div class="card" id="card"> 
             <div class="card-body">
-                <span class="btn-mode" onclick="dark_mode()">
+                <span id="btn-mode" class="btn-mode" onclick="dark_mode()">
                     <i class="fa fa-lightbulb"></i>
                 </span>
 
@@ -31,16 +31,15 @@
                 <div class="skills" id="skills">
                     <!-- <ul> -->
                         <div class="col-1">
-
                             <span>html</span>
                             <span>css</span>
                             <span>javascript</span>
                             <span>bootstrap</span>
-                            <br><br>
                             <span>codeigniter</span>
                             <span>mysql</span>
                             <span>postgree sql</span>
                         </div>
+                       
                     <!-- </ul> -->
                 </div>
 
@@ -72,9 +71,11 @@
             var skills = document.getElementById("skills");
             var social = document.getElementById("social-media");
 
+
             card.classList.toggle("dark-mode");
             skills.classList.toggle("bg-dark");
             social.classList.toggle("color-dark");
+
             
         }
     </script>

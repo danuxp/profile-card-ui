@@ -99,14 +99,19 @@ color: #25235c;
     font-size: 25px;
 }
 
+.skills {
+    text-align: center;
+}
+
 .skills span {
+    display: inline;
   background-color: #6a62b8;
   border-radius: .5rem;
   box-sizing: border-box;
   color: #fff;
-  font-size: .875rem;
   font-weight: 600;
-  line-height: 1.25rem;
+  line-height: 3.5em;
+
   padding: .75rem 1rem;
   text-decoration: none #D1D5DB solid;
   text-decoration-thickness: auto;
@@ -138,5 +143,5 @@ color: #25235c;
 
 .bg-dark  span {
   background-color: #25235c;
-
 }
+
