@@ -3,7 +3,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #d5c7ff;
-    color: #fff;
 }
 
 h1 {
@@ -30,6 +29,8 @@ p {
     width: 500px;
     border-radius: 2em;
     overflow: hidden;
+    color: #fff;
+
 }
 
 .btn-mode {
@@ -73,12 +74,69 @@ color: #25235c;
 
 .skills  {
     display: flex;
-    justify-content: space-around;
+    margin: 2em 0;
+    justify-content: center;
 }
 
-.skills span {
+.skills .col-1 {
     display: block;
     text-transform: uppercase;
     /* margin-right: 1em ; */
-    background-color: #6a62b8;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-left: -2.5em;
+}
+
+.social-media ul li a{
+    color: #fff;
+    font-size: 25px;
+}
+
+.skills span {
+  background-color: #6a62b8;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+/* .skills span:hover {
+  background-color: rgb(249,250,251);
+} */
+
+.skills span:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.skills span:focus-visible {
+  box-shadow: none;
+}
+
+.dark-mode {
+    background-color: #fff;
+    color: #25235c;
+  }
+
+  .color-dark  ul li a{
+    color: #25235c;
+}
+
+.bg-dark  span {
+  background-color: #25235c;
+
 }

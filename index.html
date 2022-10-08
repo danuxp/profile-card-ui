@@ -11,9 +11,9 @@
 <body>
     
     <div class="container">
-        <div class="card">
+        <div class="card" id="card"> 
             <div class="card-body">
-                <span class="btn-mode">
+                <span class="btn-mode" onclick="dark_mode()">
                     <i class="fa fa-lightbulb"></i>
                 </span>
 
@@ -28,31 +28,35 @@
                     </div>
                 </div>
 
-                <div class="skills">
+                <div class="skills" id="skills">
                     <!-- <ul> -->
-                        <span>html</span>
-                        <span>css</span>
-                        <span>javascript</span>
-                        <span>bootstrap</span>
-                        <span>codeigniter</span>
-                        <span>mysql</span>
-                        <span>postgree</span>
+                        <div class="col-1">
+
+                            <span>html</span>
+                            <span>css</span>
+                            <span>javascript</span>
+                            <span>bootstrap</span>
+                            <br><br>
+                            <span>codeigniter</span>
+                            <span>mysql</span>
+                            <span>postgree sql</span>
+                        </div>
                     <!-- </ul> -->
                 </div>
 
-                <div class="social-media">
+                <div class="social-media" id="social-media">
                     <ul>
                         <li>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/danuxpamungkas"><i class="fa-brands fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/danu.pamungkas.77"><i class="fa-brands fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/danuxp"><i class="fa-brands fa-github"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://wa.me/6289672008829"><i class="fa-brands fa-whatsapp"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -61,5 +65,18 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+    <script>
+        function dark_mode()
+        {
+            var card = document.getElementById("card");
+            var skills = document.getElementById("skills");
+            var social = document.getElementById("social-media");
+
+            card.classList.toggle("dark-mode");
+            skills.classList.toggle("bg-dark");
+            social.classList.toggle("color-dark");
+            
+        }
+    </script>
 </body>
 </html>
