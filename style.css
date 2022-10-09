@@ -145,3 +145,11 @@ color: #25235c;
   background-color: #25235c;
 }
 
+
+
+@media screen and (max-width: 375px) {
+    .skills span {
+        margin: 0 1em;
+        line-height: 2em;
+    }
+}
