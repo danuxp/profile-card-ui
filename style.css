@@ -123,19 +123,10 @@ color: #25235c;
     color: #25235c;
 }
 
-.bg-dark  span {
+.bg-dark  ul li {
   background-color: #25235c;
 }
 
-.dark-img {
+.dark-img img {
     background-color: #25235c;
 }
-
-/* 
-
-@media screen and (max-width: 375px) {
-    .skills span {
-        margin: 0 1em;
-        line-height: 2em;
-    }
-} */
