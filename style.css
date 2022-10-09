@@ -72,18 +72,6 @@ color: #25235c;
     text-transform: uppercase;
 }
 
-.skills  {
-    display: flex;
-    margin: 2em 0;
-    justify-content: center;
-}
-
-.skills .col-1 {
-    display: block;
-    text-transform: uppercase;
-    /* margin-right: 1em ; */
-}
-
 .social-media ul {
     display: flex;
     justify-content: space-around;
@@ -91,7 +79,7 @@ color: #25235c;
 
 .social-media ul li {
     display: inline;
-    margin-left: -2.5em;
+    margin-right: 2.5em;
 }
 
 .social-media ul li a{
@@ -103,34 +91,28 @@ color: #25235c;
     text-align: center;
 }
 
-.skills span {
+.skills ul {
+    display: block;
+    margin-right: 2.5em;
+}
+
+.skills ul li {
     display: inline;
+    text-transform: uppercase;
+    /* flex-direction: column; */
   background-color: #6a62b8;
   border-radius: .5rem;
   box-sizing: border-box;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3.5em;
-
-  padding: .75rem 1rem;
+  padding: .75rem 1rem; 
   text-decoration: none #D1D5DB solid;
   text-decoration-thickness: auto;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
 }
 
-/* .skills span:hover {
-  background-color: rgb(249,250,251);
-} */
-
-.skills span:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.skills span:focus-visible {
-  box-shadow: none;
-}
 
 .dark-mode {
     background-color: #fff;
@@ -145,11 +127,15 @@ color: #25235c;
   background-color: #25235c;
 }
 
+.dark-img {
+    background-color: #25235c;
+}
 
+/* 
 
 @media screen and (max-width: 375px) {
     .skills span {
         margin: 0 1em;
         line-height: 2em;
     }
-}
+} */

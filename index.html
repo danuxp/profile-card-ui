@@ -18,7 +18,7 @@
                 </span>
 
                 <div class="foto">
-                    <img src="aku.png" alt="foto">
+                    <img src="aku.png" alt="foto" id="foto">
 
                     <div class="name">
                         <h1>Danu Pamungkas</h1>
@@ -29,18 +29,18 @@
                 </div>
 
                 <div class="skills" id="skills">
-                    <!-- <ul> -->
-                        <div class="col-1">
-                            <span>html</span>
-                            <span>css</span>
-                            <span>javascript</span>
-                            <span>bootstrap</span>
-                            <span>codeigniter</span>
-                            <span>mysql</span>
-                            <span>postgree sql</span>
-                        </div>
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>bootstrap</li>
+                        <li>codeigniter</li>
+                        <li>mysql</li>
+                        <li>postgree sql</li>
+                        <!-- <div class="col-1">
+                        </div> -->
                        
-                    <!-- </ul> -->
+                    </ul>
                 </div>
 
                 <div class="social-media" id="social-media">
@@ -70,13 +70,12 @@
             var card = document.getElementById("card");
             var skills = document.getElementById("skills");
             var social = document.getElementById("social-media");
-
+            var foto = document.getElementById("foto");
 
             card.classList.toggle("dark-mode");
             skills.classList.toggle("bg-dark");
             social.classList.toggle("color-dark");
-
-            
+            foto.classList.toggle("dark-img");
         }
     </script>
 </body>
